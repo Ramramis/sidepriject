@@ -3,7 +3,14 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="user.side.dao.CustomerInfoDAO">
+<mapper namespace="user.side.dao.ProductDao">
 
+	 <select id="findAll" resultType="com.dogbyyou.dto.ProductDto">
+        SELECT * FROM products
+    </select>
+    
+    <select id="findById" parameterType="int" resultType="com.dogbyyou.dto.ProductDto">
+        SELECT * FROM products WHERE id = #{id}
+    </select>
 
 </mapper>

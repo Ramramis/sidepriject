@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+ .category-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .category-bar button {
+            margin-right: 15px;
+        }
+        .product-card {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card h5 {
+            margin-top: 10px;
+        }
+        
+   
