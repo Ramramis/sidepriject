@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Select;
 public interface UserDao {
 	
     // 새로운 유저를 데이터베이스에 추가하는 쿼리
-    @Insert("INSERT INTO users (id , email, password,name,adress,phone) VALUES (#{id} , #{email}, #{password} , #{name) ,#{adress} , #{phone}")
+	@Insert("INSERT INTO users (userid, email, password, name, adress, phone) VALUES (#{id}, #{email}, #{password}, #{name}, #{adress}, #{phone})")
     void insertUser(UserDto user);
 
     

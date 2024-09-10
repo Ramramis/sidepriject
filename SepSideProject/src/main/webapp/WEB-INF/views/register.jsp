@@ -34,15 +34,15 @@
         
          <div>
             <label for="phone">연락처:</label>
-            <input type="text" id="phone" name="phone" required  placeholder="-포함">
+            <input type="text" id="phone" name="phone" required placeholder="010-1234-5678" pattern="\d{3}-\d{4}-\d{4}">
         </div>
         
           <div>
-            <label for="adress">주소:</label>
-            <input type="text" id="adress" name="adress" placeholder="우편번호" required>
+            <label for="address">주소:</label>
+            <input type="text" id="zipcode" name="zipcode" placeholder="우편번호"  readonly >
              <button type="button" onclick="execDaumPostcode()">주소 검색</button>
         </div>
-        
+         <input type="text" id="address" name="address" required>
 
         <div>
             <button type="submit">회원가입</button>

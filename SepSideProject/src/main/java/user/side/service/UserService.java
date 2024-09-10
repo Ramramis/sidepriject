@@ -16,6 +16,7 @@ public class UserService {
 
     // 회원가입 처리
     public void insertUser(UserDto user) {
+    	 // 비밀번호 암호화
         userDao.insertUser(user);  // DB에 유저 저장
     }
 
